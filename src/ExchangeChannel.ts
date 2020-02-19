@@ -127,6 +127,11 @@ export class Subscription {
         req.on("close", () => {
             this._isAlive = false;
         });
+        setTimeout(() => {
+            if (!res.headersSent) {
+                res.status(204).send({ status: 204 });
+            }
+        }, 25000);
     }
 
     public send(data: Buffer): void {
