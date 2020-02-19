@@ -1,10 +1,16 @@
 {
     "name": "object-exchange-server",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A lightweight server to exchange objects.",
-    "keywords": ["event bus", "object exchange"],
-    "main": "./dest/ObjectExchangeServer.js",
-    "types": "./dest/ObjectExchangeServer.d.ts",
+    "keywords": [
+        "event bus",
+        "object exchange"
+    ],
+    "main": "./dist/ObjectExchangeServer.js",
+    "types": "./dist/ObjectExchangeServer.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
